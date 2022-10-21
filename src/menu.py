@@ -3,7 +3,7 @@ from collections import namedtuple
 from datetime import datetime, date, timedelta
 Menu = namedtuple('Menu', 'Category,Item,Serving Size,Calories,Calories from Fat,Total Fat,Cholesterol,precio_menus,fecha_entrada,hora_cierre,fecha_comidas')
 
-def lee_reparaciones(fichero):
+def lee_menu(fichero):
     with open(fichero,enconding='utf-8')as f:
         lector = csv.reader(f,delimiters=";")
         next(lector)
